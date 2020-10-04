@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+img, fieldset { border: 0; }
+ol { margin-left: 1.4em; list-style: decimal; }
+ul { margin-left: 1em; list-style:square; }
+q:before, q:after { content:''; }
+
+
+
+/*Diseno de barra de navegacion*/
+#cuerpo{
+	font-family: sans-serif;
+}
+/*formato de barra de navegacion*/
+#barra{
+	top: 0;
+	background-color: #FFFFFF;
+	
+}
+#navbarra li{
+	display: inline;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	
+}
+#navbarra ul{
+	
+}
+#navbarra{
+	margin: 0px auto;
+	width: 900px;
+	overflow: hidden;
+	
+	border-right: 1px solid dodgerblue;
+}
+#navbarra a{
+	display: block;
+	padding: 10px 37.01562px;
+	border: 1px solid dodgerblue;
+	border-right: none;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+
+/*Diseno de inicio*/
+#inicio-contenido{
+	margin-top: 30px;
+}
+#foto_perfil{
+	width: 200px;
+	height: 300px;
+	padding: 50px
+}
+#nombre{
+	font-size: 80px;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: absolute;
+	top: 140px;
+	left: 300px;	
+}
+#nombre #apellidos{
+	color:navy
+}
+p{
+	padding: 10px 50px;
+	font-size: 20px;
+}
+#subtitulo{
+	text-transform: uppercase;
+	font-size: 25px;
+}
+.redes_sociales{
+	font-size: 18px;
+	padding: 0 50px;
+	margin: 0 auto;
+	width: 590px;
+}
+.redes_sociales a{
+	text-decoration: none;
+	padding:5px 20px;
+	width: 112px;
+	color: #666666;
+}
+.redes_sociales a:hover{
+	background-color:#88FFF9
+}
+h2{
+	font-size: 32px;
+	text-transform: uppercase;
+	padding: 10px 50px 0;
+	color:navy
+}
+h3{
+	font-size: 27px;
+	text-transform: uppercase;
+	padding: 10px 50px;
+	color:mediumslateblue
+}
+
+#exp-ref p{
+	padding: 3px 50px;
+	padding-right: 250px
+}
+#exp-ref #fechas{
+	float: right;
+	padding-left: 0;
+	padding-right: 0;
+	width: 250px;
+	font-size: 16px;
+}
