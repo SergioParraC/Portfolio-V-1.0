@@ -6,7 +6,8 @@
 <link href="estilos.css" rel="stylesheet" type="text/css">
 <!--Iconos de redes sociales-->
 <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-	
+<script src="jQuery v1.12.4.js"></script>
+<script src="scripts.js"></script>
 </head>
 
 <body>
@@ -34,11 +35,11 @@
 			<p id="p-principal">Ingeniero Civil profesional con habilidades flexibles en el área técnica, ejecución de labores, encontrar las soluciones efectivas, con destrezas en distintos software aplicados en ingeniería, como Microsoft Proyect, Excel avanzado, programación y manejo de Sistemas de Información Geográfica (SIG). He ejercido en el área hídrica, con el uso de los SIG para cálculo de parámetros básicos en el diseño de sistemas de captación de agua potable.</p>
 
 			<div class="redes_sociales">
-				<a href="https://www.facebook.com/parracuesta">Facebook</a>
-				<a href="https://wa.me/qr/GPJUFWYVRQD6J1">WhatsApp</i></a>
-				<a  href="https://www.youtube.com/channel/UCi_20At4TxL136OXsXwJcLQ?view_as=subscriber">Youtube</a>
-				<a href="https://www.instagram.com/sergioparracuesta?r=nametag">Instagram</a>
-				<a href="https://github.com/SergioParraC">GitHub</a>
+				<a href="https://www.facebook.com/parracuesta"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://wa.me/qr/GPJUFWYVRQD6J1"><i class="fab fa-whatsapp"></i></a>
+				<a  href="https://www.youtube.com/channel/UCi_20At4TxL136OXsXwJcLQ?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+				<a href="https://www.instagram.com/sergioparracuesta?r=nametag"><i class="fab fa-instagram"></i></a>
+				<a href="https://github.com/SergioParraC"><i class="fab fa-github"></i></a>
 			</div>
 		</div>
 	</section>
@@ -66,94 +67,137 @@
 	<section id="educacion">
 		<div id="educacion-contenido">
 			<h2>Educación</h2>
-			<ul class="fa-ul mb-0">
+			<ul>
 				<li>
-					<span class="fa-li"><i class="fas fa-cogs text-warning"></i></span>
+					<i id="em_ed_p" class="fas fa-cogs text-warning"></i>
 					<h3>Educación profesional</h3>
 					<ul>
 						<li>
-							<span class="fa-li"><i class="fas fa-graduation-cap text-warning"></i></span>
-							<h4>Universidad Católica de Colombia</h4>
-							<p id="subtitulo">Ingeniero Civil</p>
-							<p>Bogotá - Colombia</p>
+							<i id="em_ed_s" class="fas fa-graduation-cap text-warning"></i>
 							<p id="fechas">Enero 2015 - Abril 2020</p>
+							<h4>Universidad Católica de Colombia</h4>
+							<p><span id="subtitulo">Ingeniero Civil</span><br/><span id="p-secundario">Bogotá - Colombia</span></p>
 						</li>
 					</ul>
 				</li>
 			</ul>
 			<ul>
-				<li><h3>Educación básica</h3></li>
-				<ul>
-					<li><h4>Colegio Católica de Colombia</h4></li>
-					<p id="subtitulo">Básico bachillerato</p>
-					<p id="p-secundario">Bogotá - Colombia</p>
-					<p id="fechas">Diciembre 2014</p>
-				</ul>
+				<li>
+					<i id="em_ed_p" class="fas fa-cogs text-warning"></i>
+					<h3>Educación básica</h3></li>
+					<ul>
+						<li>
+							<i id="em_ed_s" class="fas fa-graduation-cap text-warning"></i>
+							<p id="fechas">Diciembre 2014</p>
+							<h4>Colegio Católica de Colombia</h4>
+							<p><span id="subtitulo">Básico bachillerato</span><br/><span id="p-secundario">Bogotá - Colombia</span></p>
+						</li>
+					</ul>
 			</ul>
 			<ul>
-				<li><h3>Estudios formales</h3></li>
-				<ul>
-					<li><h5>Universidad Católica de Colombia</h5></li>
-					<p id="p-secundario">Diplomado en Diseño de Sistemas de Infraestructuras</p>
-					<p id="fechas">Julio 2019</p>
-					
-					<li><h5>Universidad Católica de Colombia</h5></li>
-					<p id="p-secundario">Nanomateriales – Aplicaciones en ingeniería civil</p>
-					<p id="fechas">Junio 2017</p>
-					
-					<li><h5>Universidad Católica de Colombia</h5></li>
-					<p id="p-secundario">Actualización topográfica – Uso de estaciones totales</p>
-					<p id="fechas">Junio 2017</p>
-					
-					<li><h5>Universidad Católica de Colombia</h5></li>
-					<p id="p-secundario">Programación en Arduino</p>
-					<p id="fechas">Junio 2017</p>
-				</ul>
+				<li>
+					<i id="em_ed_p" class="fas fa-cogs text-warning"></i>
+					<h3>Estudios formales</h3>
+					<ul>
+						<li>
+							<p id="fechas">Julio 2019</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Diplomado en Diseño de Sistemas de Infraestructuras</h5>
+							<p id="p-secundario">Universidad Católica de Colombia</p>
+						</li>
+
+						<li>
+							<p id="fechas">Junio 2017</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Nanomateriales – Aplicaciones en ingeniería civil</h5>
+							<p id="p-secundario">Universidad Católica de Colombia</p>
+						</li>
+
+						<li>
+							<p id="fechas">Junio 2017</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Actualización topográfica – Uso de estaciones totales</h5>
+							<p id="p-secundario">Universidad Católica de Colombia</p>
+						</li>
+
+						<li>
+							<p id="fechas">Junio 2017</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Programación en Arduino</h5>
+							<p id="p-secundario">Universidad Católica de Colombia</p>
+						</li>
+					</ul>
+				</li>
 			</ul>
 			
 			<ul>
-				<li><h3>Estudios no formales</h3></li>
-				<ul>
-					<li><h5>Diseño de páginas web con el framework Django</h5></li>
-					<p id="p-secundario">Independiente</p>
-					<p id="fechas">Octubre 2020</p>
-					
-					<li><h5>Diseño de páginas web con JavaScript</h5></li>
-					<p id="p-secundario">Independiente</p>
-					<p id="fechas">Octubre 2020</p>
-					
-					<li><h5>Diseño de páginas web con CSS3</h5></li>
-					<p id="p-secundario">Independiente</p>
-					<p id="fechas">Septiembre 2020</p>
-					
-					<li><h5>Microsoft Project</h5></li>
-					<p id="p-secundario">Independiente</p>
-					<p id="fechas">Julio 2020</p>
-					
-					<li><h5>Programación en Python</h5></li>
-					<p id="p-secundario">Independiente</p>
-					<p id="fechas">Junio 2017</p>
-					
-					<li><h5>Microsoft Excel avanzado (manejo de fórmulas, macros y Visual Basic</h5></li>
-					<p id="p-secundario">Curso sin certificado</p>
-					<p id="fechas">Junio 2019</p>
-					
-					<li><h5>Matlab básico</h5></li>
-					<p id="p-secundario">Curso sin certificado</p>
-					<p id="fechas">Junio 2019</p>
-					
-					<li><h5>ESRI ArcGIS 10.5</h5></li>
-					<p id="p-secundario">Independiente</p>
-					<p id="fechas">Diciembre 2018</p>
-					
-					<li><h5>Análisis de estructuras por medio de SAP 2000</h5></li>
-					<p id="p-secundario">Curso sin certificado</p>
-					<p id="fechas">Junio 2018</p>
-					
-					<li><h5>Autodesk AutoCAD</h5></li>
-					<p id="p-secundario">Independiente</p>
-					<p id="fechas">Febrero 2015</p>
-				</ul>
+				<li>
+					<div><i id="em_ed_p" class="fas fa-cogs text-warning"></i></div>
+					<h3>Estudios no formales</h3>
+					<ul>
+						<li>
+							<p id="fechas">Octubre 2020</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Framework Django - Python</h5>
+							<p id="p-secundario">Independiente</p>
+						</li>
+
+						<li>
+							<p id="fechas">Octubre 2020</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Diseño de páginas web con JavaScript</h5>
+							<p id="p-secundario">Independiente</p>
+						</li>
+						<li>
+							<p id="fechas">Septiembre 2020</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Diseño de páginas web con CSS3</h5>
+							<p id="p-secundario">Independiente</p>
+						</li>
+						<li>
+							<p id="fechas">Julio 2020</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Microsoft Project</h5>
+							<p id="p-secundario">Independiente</p>
+						</li>
+						<li>
+							<p id="fechas">Junio 2017</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Programación en Python</h5>
+							<p id="p-secundario">Independiente</p>
+						</li>
+						<li>
+							<p id="fechas">Junio 2019</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Microsoft Excel avanzado (manejo de fórmulas, macros y Visual Basic)</h5>
+							<p id="p-secundario">Curso sin certificado</p>
+						</li>
+						<li>
+							<p id="fechas">Junio 2019</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Matlab básico</h5>
+							<p id="p-secundario">Curso sin certificado</p>
+						</li>
+						<li>
+							<p id="fechas">Diciembre 2018</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>ESRI ArcGIS 10.5</h5>
+							<p id="p-secundario">Independiente</p>
+						</li>
+						<li>
+							<p id="fechas">Junio 2018</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Análisis de estructuras por medio de SAP 2000</h5>
+							<p id="p-secundario">Curso sin certificado</p
+						</li>
+						<li>
+							<p id="fechas">Febrero 2015</p>
+							<i id="em_ed_p" class="fas fa-check text-warning"></i>
+							<h5>Autodesk AutoCAD</h5>
+							<p id="p-secundario">Independiente</p>
+						</li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</section>
