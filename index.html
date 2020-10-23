@@ -4,15 +4,19 @@
 <meta charset="utf-8">
 <title>Sergio Parra - Perfil</title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
+<link href="estilos_imprimir.css" rel="stylesheet" type="text/css" media="print">
 <!--Iconos de redes sociales-->
-<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-a11y="true"></script>
 <script src="jQuery v1.12.4.js"></script>
 <script src="scripts.js"></script>
+
+
 </head>
 
 <body>
 	<div id="cuerpo">
 	<div id="barra">
+		<div id="progress"></div>
 		<ul id="navbarra">
 			<li><a id="barra-inicio" href="#inicio">Inicio</a></li>
 			<li><a id="barra-exp" href="#experiencia">Experiencia</a></li>
@@ -21,40 +25,43 @@
 			<li><a id="barra-int" href="#intereses">Intereses</a></li>
 			<li><a id="barra-proy" href="#proyectos">Proyectos</a></li>
 		</ul>
+		
 	</div>
 <!--Inicio-->	
 	<section id="inicio">
 		<div id="inicio-contenido">
-			<img src="Imagenes/profile.jpg" id="foto_perfil">
-			<div id="nombre">
+			<img src="Imagenes/profile.jpg" id="foto_perfil" class="animacion3">
+			<div id="nombre" class="animacion3">
 				<h1>Sergio Steven</h1>
 				<h1 id="apellidos">Parra Cuesta</h1>
 			</div>
-
-			<p id="subtitulo">Bogotá · (+57) 3203633542 · <a href="stevenparracuesta@gmail.com">stevenparracuesta@gmail.com</a></p>
-			<p id="p-principal">Ingeniero Civil profesional con habilidades flexibles en el área técnica, ejecución de labores, encontrar las soluciones efectivas, con destrezas en distintos software aplicados en ingeniería, como Microsoft Proyect, Excel avanzado, programación y manejo de Sistemas de Información Geográfica (SIG). He ejercido en el área hídrica, con el uso de los SIG para cálculo de parámetros básicos en el diseño de sistemas de captación de agua potable.</p>
-
+			<div class="animacion3">
+				<p id="subtitulo">Bogotá - Colombia · (+57) 3203633542 · <a href="stevenparracuesta@gmail.com">stevenparracuesta@gmail.com</a></p>
+				<p id="p-principal">Ingeniero Civil profesional con habilidades flexibles en el área técnica, ejecución de labores, encontrar las soluciones efectivas, con destrezas en distintos software aplicados en ingeniería, como Microsoft Proyect, Excel avanzado, programación y manejo de Sistemas de Información Geográfica (SIG) y diseño web. He ejercido en el área hídrica, con el uso de los SIG para cálculo de parámetros básicos en el diseño de sistemas de captación de agua potable.</p>
+			</div>
 			<div class="redes_sociales">
-				<a href="https://www.facebook.com/parracuesta"><i class="fab fa-facebook-f"></i></a>
-				<a href="https://wa.me/qr/GPJUFWYVRQD6J1"><i class="fab fa-whatsapp"></i></a>
-				<a  href="https://www.youtube.com/channel/UCi_20At4TxL136OXsXwJcLQ?view_as=subscriber"><i class="fab fa-youtube"></i></a>
-				<a href="https://www.instagram.com/sergioparracuesta?r=nametag"><i class="fab fa-instagram"></i></a>
-				<a href="https://github.com/SergioParraC"><i class="fab fa-github"></i></a>
+				<ul class="animacion3">
+					<li><a href="https://www.facebook.com/parracuesta" id="facebook"><i class="fab fa-facebook-f"></i></a><span class="facebook"> (facebook.com/parracuesta)</span></li>
+					<li><a href="https://wa.me/qr/GPJUFWYVRQD6J1"><i class="fab fa-whatsapp"></i></a><span class="whatsapp"> (+57 3203633542)</span></li>
+					<li><a  href="https://www.youtube.com/channel/UCi_20At4TxL136OXsXwJcLQ?view_as=subscriber"><i class="fab fa-youtube"></i></a><span class="youtube"> (Sergio Parra)</span></li>
+					<li><a href="https://www.instagram.com/sergioparracuesta?r=nametag"><i class="fab fa-instagram"></i></a><span class="instagram"> (instagram.com/sergioparracuesta)</span></li>
+					<li><a href="https://github.com/SergioParraC"><i class="fab fa-github"></i></a><span class="github"> (github.com/SergioParraC)</span></li>
+				</ul>
 			</div>
 		</div>
 	</section>
-	<hr/>
+	<hr/ class="animacion1">
 <!--Experiencia-->
 	<section id="experiencia">
 		<div id="experiencia-contenido">
-			<h2>Experiencia</h2>
-			<div id="exp-ref">
+			<h2 class="animacion1">Experiencia</h2>
+			<div id="exp-ref" class="animacion1">
 				<h3>Cartografo</h3>
 				<p id="subtitulo">Proindesco Ltda</p>
 				<p id="fechas">Febrero 2019 - Junio 2019</p>
 				<p>Análisis de datos geográficos para localizar cuencas, cálculo de sus parámetros básicos para el diseño de sistemas de recolección de agua potable. </p><p>Contacto:</p><p>Ing. Guillermo Hernández Torres</p><p>(+57) 3157274724</p><p><a href="ghernandez@ucatolica.edu.co">ghernandez@ucatolica.edu.co</a></p>
 			</div>
-			<div id="exp-ref">
+			<div id="exp-ref" class="animacion1">
 				<h3>Dibujante</h3>
 				<p id="fechas">Agosto 2017 - Octubre 2017</p>
 				<p id="subtitulo">Trabajo independiente</p>
@@ -62,69 +69,85 @@
 			</div>
 		</div>
 	</section>
-	<hr/>
+	<hr/ class="animacion1">
 <!--Estudios-->
 	<section id="educacion">
 		<div id="educacion-contenido">
-			<h2>Educación</h2>
+		<div>
+			<h2 class="animacion1">Educación</h2>
 			<ul>
-				<li>
+				<li class="animacion1">
 					<i id="em_ed_p" class="fas fa-cogs text-warning"></i>
 					<h3>Educación profesional</h3>
 					<ul>
 						<li>
-							<i id="em_ed_s" class="fas fa-graduation-cap text-warning"></i>
-							<p id="fechas">Enero 2015 - Abril 2020</p>
-							<h4>Universidad Católica de Colombia</h4>
-							<p><span id="subtitulo">Ingeniero Civil</span><br/><span id="p-secundario">Bogotá - Colombia</span></p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-graduation-cap text-warning"></i>
+								<p id="fechas">Enero 2015 - Abril 2020</p>
+								<h4>Universidad Católica de Colombia</h4>
+								<p><span id="subtitulo">Ingeniero Civil</span><br/><span id="p-secundario">Bogotá - Colombia</span></p>
+							</div>
 						</li>
 					</ul>
 				</li>
 			</ul>
 			<ul>
-				<li>
+				<li class="animacion1">
 					<i id="em_ed_p" class="fas fa-cogs text-warning"></i>
-					<h3>Educación básica</h3></li>
-					<ul>
+					<h3>Educación básica</h3>
+						<ul>
 						<li>
-							<i id="em_ed_s" class="fas fa-graduation-cap text-warning"></i>
-							<p id="fechas">Diciembre 2014</p>
-							<h4>Colegio Católica de Colombia</h4>
-							<p><span id="subtitulo">Básico bachillerato</span><br/><span id="p-secundario">Bogotá - Colombia</span></p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-graduation-cap text-warning"></i>
+								<p id="fechas">Diciembre 2014</p>
+								<h4>Colegio Católico de Colombia</h4>
+								<p><span id="subtitulo">Básico bachillerato</span><br/><span id="p-secundario">Bogotá - Colombia</span></p>
+							</div>
 						</li>
-					</ul>
+						</ul>
+				</li>
 			</ul>
 			<ul>
 				<li>
-					<i id="em_ed_p" class="fas fa-cogs text-warning"></i>
-					<h3>Estudios formales</h3>
+					<div class="animacion1">
+						<i id="em_ed_p" class="fas fa-cogs text-warning"></i>
+						<h3>Estudios formales</h3>
+					</div>
 					<ul>
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Julio 2019</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Diplomado en Diseño de Sistemas de Infraestructuras</h5>
-							<p id="p-secundario">Universidad Católica de Colombia</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Diplomado en Diseño de Sistemas de Infraestructuras</h5>
+								<p id="p-secundario">Universidad Católica de Colombia</p>
+							</div>
 						</li>
 
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Junio 2017</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Nanomateriales – Aplicaciones en ingeniería civil</h5>
-							<p id="p-secundario">Universidad Católica de Colombia</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Nanomateriales – Aplicaciones en ingeniería civil</h5>
+								<p id="p-secundario">Universidad Católica de Colombia</p>
+							</div>
 						</li>
 
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Junio 2017</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Actualización topográfica – Uso de estaciones totales</h5>
-							<p id="p-secundario">Universidad Católica de Colombia</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Actualización topográfica – Uso de estaciones totales</h5>
+								<p id="p-secundario">Universidad Católica de Colombia</p>
+							</div>
 						</li>
 
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Junio 2017</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Programación en Arduino</h5>
-							<p id="p-secundario">Universidad Católica de Colombia</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Programación en Arduino</h5>
+								<p id="p-secundario">Universidad Católica de Colombia</p>
+							</div>
 						</li>
 					</ul>
 				</li>
@@ -132,128 +155,152 @@
 			
 			<ul>
 				<li>
-					<div><i id="em_ed_p" class="fas fa-cogs text-warning"></i></div>
-					<h3>Estudios no formales</h3>
+					<div class="animacion1">
+						<i id="em_ed_p" class="fas fa-cogs text-warning"></i>
+						<h3>Estudios no formales</h3>
+					</div>
 					<ul>
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Octubre 2020</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Framework Django - Python</h5>
-							<p id="p-secundario">Independiente</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Framework Django - Python</h5>
+								<p id="p-secundario">Independiente</p>
+							</div>
 						</li>
-
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Octubre 2020</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Diseño de páginas web con JavaScript</h5>
-							<p id="p-secundario">Independiente</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Diseño de páginas web con JavaScript</h5>
+								<p id="p-secundario">Independiente</p>
+							</div>
 						</li>
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Septiembre 2020</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Diseño de páginas web con CSS3</h5>
-							<p id="p-secundario">Independiente</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Diseño de páginas web con CSS3</h5>
+								<p id="p-secundario">Independiente</p>
+							</div>
 						</li>
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Julio 2020</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Microsoft Project</h5>
-							<p id="p-secundario">Independiente</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Microsoft Project</h5>
+								<p id="p-secundario">Independiente</p>
+							</div>
 						</li>
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Junio 2017</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Programación en Python</h5>
-							<p id="p-secundario">Independiente</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Programación en Python</h5>
+								<p id="p-secundario">Independiente</p>
+							</div>
 						</li>
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Junio 2019</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Microsoft Excel avanzado (manejo de fórmulas, macros y Visual Basic)</h5>
-							<p id="p-secundario">Curso sin certificado</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Microsoft Excel avanzado (manejo de fórmulas, macros y Visual Basic)</h5>
+								<p id="p-secundario">Curso sin certificado</p>
+							</div>
 						</li>
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Junio 2019</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Matlab básico</h5>
-							<p id="p-secundario">Curso sin certificado</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Matlab básico</h5>
+								<p id="p-secundario">Curso sin certificado</p>
+							</div>
 						</li>
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Diciembre 2018</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>ESRI ArcGIS 10.5</h5>
-							<p id="p-secundario">Independiente</p>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>ESRI ArcGIS 10.5</h5>
+								<p id="p-secundario">Independiente</p>
+							</div>
 						</li>
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Junio 2018</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Análisis de estructuras por medio de SAP 2000</h5>
-							<p id="p-secundario">Curso sin certificado</p
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Análisis de estructuras por medio de SAP 2000</h5>
+								<p id="p-secundario">Curso sin certificado</p>
+							</div>	
 						</li>
-						<li>
+						<li class="animacion1">
 							<p id="fechas">Febrero 2015</p>
-							<i id="em_ed_s" class="fas fa-check text-warning"></i>
-							<h5>Autodesk AutoCAD</h5>
-							<p id="p-secundario">Independiente</p>
-						</li>
+							<div style="margin-left: 15px">
+								<i id="em_ed_s" class="fas fa-check text-warning"></i>
+								<h5>Autodesk AutoCAD</h5>
+								<p id="p-secundario">Independiente</p>
+							</div>
+						</li class="animacion1">
 					</ul>
 				</li>
 			</ul>
 		</div>
+		</div>
 	</section>
-	<hr/>
+	<hr/ class="animacion1">
 <!--Habilidades-->
 	<section id="habilidades">
 		<div id="habilidades-contenido">
-			<h2>Habilidades</h2>
-				<h3>Herramientas</h3>
+			<h2 class="animacion1">Habilidades</h2>
+				<h3 class="animacion1">Herramientas</h3>
 				<ul>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    Autodesk AutoCAD</li>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    ESRI ArcGIS 10.5</li>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    Microsoft Office Excel (Avanzado)</li>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    Microsoft Project</li>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    SAP 2000</li>
+					<li class="animacion1"><i class="fas fa-cogs"></i>    Autodesk AutoCAD</li>
+					<li class="animacion1"><i class="fas fa-cogs"></i>    ESRI ArcGIS 10.5</li>
+					<li class="animacion1"><i class="fas fa-cogs"></i>    Microsoft Office Excel (Avanzado)</li>
+					<li class="animacion1"><i class="fas fa-cogs"></i>    Microsoft Project</li>
+					<li class="animacion1"><i class="fas fa-cogs"></i>    SAP 2000</li>
 				</ul>
-				<h3>Lenguajes de programacíon</h3>
+				<h3 class="animacion1">Lenguajes de programacíon</h3>
 				<ul>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    Arduino</li>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    CSS3</li>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    Framework Django</li>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    JavaScript</li>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    Matlab</li>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    Python</li>
-					<li><i class="fas fa-check-circle-o text-warning"></i>    Visual Basic (Excel)</li>
+					<li class="animacion1"><i class="fas fa-file-code"></i>    Arduino</li>  
+					<li class="animacion1"><i class="fas fa-file-code"></i>    CSS3</li>
+					<li class="animacion1"><i class="fas fa-file-code"></i>    Framework Django</li>
+					<li class="animacion1"><i class="fas fa-file-code"></i>    JavaScript</li>
+					<li class="animacion1"><i class="fas fa-file-code"></i>    Matlab</li>
+					<li class="animacion1"><i class="fas fa-file-code"></i>    Python</li>
+					<li class="animacion1"><i class="fas fa-file-code"></i>    Visual Basic (Excel)</li>
 				</ul>
 		</div>
 	</section>
-	<hr/>
+	<hr/ class="animacion1">
 <!--Intereses-->
 	<section id="intereses">
 		<div id="intereses-contenido">
-			<h2>Intereses</h2>
-				<img id="imagen" src="Imagenes/IMG-20191128-WA0004.jpg">
-				<p id="parrafo1">Me gusta investigar sobre el área de la ingeniería, especialmente en el área de la construcción y software. Son áreas complementarias ya que sin la programación no es posible realizar tantos cálculos que se necesitan para distintas labores aplicadas en la ingeniería civil.</p>
-				<p id="parrafo2">Mi deporte favorito es el ciclismo, he ido a lugares increíbles en el departamento de Cundinamarca y Boyacá, y me gusta usarla para movilizarme por la ciudad, es un medio de transporte bastante eficiente y rápido dentro de la ciudad.</p>
-				<p id="parrafo3">El trabajo de grado lo realice sobre hidrología, en el cual por medio de modelos hidrológicos calculé el recurso hídrico disponible en distintos puntos de recolección de agua potable en las cuencas del rio Coello, en la ciudad de Ibagué en el departamento del Tolima y en la cuenca del rio Ceibas, cerca de la ciudad de Neiva en Huila. Para el desarrollo aplique programación en Python y Visual Basic para el tratamiento de una base de datos, esta consta de 30 años de información de distintos paramentos ambientales, para encontrar datos erróneos y complementar información faltante.</p>
+			<h2 class="animacion1">Intereses</h2>
+				<img id="imagen" src="Imagenes/IMG-20191128-WA0004.jpg" class="animacion1">
+				<div class="animacion1">
+					<p id="parrafo1">Me gusta investigar sobre el área de la ingeniería, especialmente en el área de la construcción y software. Son áreas complementarias ya que sin la programación no es posible realizar tantos cálculos que se necesitan para distintas labores aplicadas en la ingeniería civil.</p>
+					<p id="parrafo2">Mi deporte favorito es el ciclismo, he ido a lugares increíbles en el departamento de Cundinamarca y Boyacá, y me gusta usarla para movilizarme por la ciudad, es un medio de transporte bastante eficiente y rápido dentro de la ciudad.</p>
+					<p id="parrafo3">El trabajo de grado lo realice sobre hidrología, en el cual por medio de modelos hidrológicos calculé el recurso hídrico disponible en distintos puntos de recolección de agua potable en las cuencas del rio Coello, en la ciudad de Ibagué en el departamento del Tolima y en la cuenca del rio Ceibas, cerca de la ciudad de Neiva en Huila. Para el desarrollo aplique programación en Python y Visual Basic para el tratamiento de una base de datos, esta consta de 30 años de información de distintos paramentos ambientales, para encontrar datos erróneos y complementar información faltante.</p>
+				</div>
 		</div>
 	</section>
-	<hr/>
+	<hr/ class="animacion1">
 <!--Proyectos-->
 	<section id="proyectos">
 		<div id="proyecto-contenido">
-			<h2>Proyectos</h2>
+			<h2 class="animacion1">Proyectos</h2>
 			<ul>
-				<li>
+				<li class="animacion1">
 					<i id="em_ed_p" class="fas fa-laptop text-warning"></i>
 					<h3>Diseño de pagina web personal (2020)</h3>
 					<p id="p-secundario">SERGIO PARRA - PERFIL</p>
 					<p>Enlace de acceso: esta pagina web es el correspondiente proyecto</p><p>Pagina web creada y publicada como Hobbie</p><p>En desarrollo</p>
 				</li>
-				<li>
+				<li class="animacion1">
 					<i id="em_ed_p" class="fas fa-university text-warning"></i>
 					<h3>Trabajo de grado (2019)</h3>
 					<p id="p-secundario">ANÁLISIS DE OFERTA HÍDRICA SUPERFICIAL A ESCALA DIARIA APLICADA EN CUENCAS COLOMBINANAS</p>
-					<p>Universidad Católica de Colombia</p><p>Enlace de acceso: <a href='https://hdl.handle.net/10983/24227'>repositorio Universidad Católica de Colombia</a></p><p>Trabajo para optar el titulo de Ingeniero Civil.</p><p>Culminado</p>
+					<p>Universidad Católica de Colombia</p><p>Enlace de acceso: <a href='https://hdl.handle.net/10983/24227' id="link_rep">repositorio Universidad Católica de Colombia</a></p><span class="repositorio"> (hdl.handle.net/10983/24227)</span><p>Trabajo para optar el titulo de Ingeniero Civil.</p><p>Culminado</p>
 				</li>
 			</ul>
 		</div>
@@ -274,5 +321,8 @@
 	</section>
 	<hr/>
 </div>
+
+
+	
 </body>
 </html>
