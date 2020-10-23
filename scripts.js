@@ -39,9 +39,6 @@ $(document).ready(function(){
 	let altoP = document.documentElement.clientHeight;
 	document.getElementById("proyecto-contenido").style.height=altoP -52+"px";
 	
-	
-	
-
 	//Muestra ubicacion actual de la pagina bajo la barra de navegacion
 	
 	var longLinksSecc = [6];
@@ -52,28 +49,29 @@ $(document).ready(function(){
 	longLinksSecc[4]=$("#barra-int").width()+38.42*2;
 	longLinksSecc[5]=($("#barra-proy").width()+38.42*2);
 	
-	
 	let progresbar = document.querySelector("#progress");
 	var secciones = document.querySelectorAll("section");
 	var longSecc = [secciones.length]; 
-	for (var i=0 ; i<secciones.length; i++){
-		longSecc[i]=secciones[i].offsetTop-52; //Altura del elemento con respecto a la parte superior de la pag
-	}
-	longSecc[6]=longSecc[6]-altoP+52;
+	
+	
 	
 	//Configuracion inicial para animaciones
 	let animado = document.querySelectorAll(".animacion1");
 	document.getElementById("barra").classList.add("animacion2");
 
 	//funciones que realiza al detecta el scroll
-	function ScrollProgresBar() {
 
-		let scrollTop = document.documentElement.scrollTop; //Valor del scroll
-		let scrollHeight = document.documentElement.scrollHeight; //Alto total
-		let clientHeight = document.documentElement.clientHeight; //lo que ve el usuario
+	let scrollHeight = document.documentElement.scrollHeight; //Alto total
+	let clientHeight = document.documentElement.clientHeight; //lo que ve el usuario
+	function ScrollProgresBar() {
+		for (var i = 0; i < secciones.length; i++) {
+			longSecc[i] = secciones[i].offsetTop-69; //Altura del elemento con respecto a la parte superior de la pag
+		}
+		longSecc[6] = longSecc[6]-clientHeight+100;
 		
-		let windowsHeight = scrollHeight - clientHeight;
-		let porcentaje= scrollTop/windowsHeight*100;
+		let scrollTop = document.documentElement.scrollTop; //Valor del scroll
+		//let windowsHeight = scrollHeight - clientHeight;
+		//let porcentaje= scrollTop/windowsHeight*100;
 		var porcentaje1=0, secc=0;
 		for (var i=0 ; i<secciones.length; i++){
 			
@@ -109,17 +107,31 @@ $(document).ready(function(){
 });
 //Funciones para cambiar las imagenes al pasar mouse por un parrafo en los intereses
 var foto_1 = new Image();
-foto_1.src="Imagenes/banner.jpg";
+foto_1.src = "Imagenes/3964906.jpg";
 function img1(){
-	$("#imagen").attr("src",foto_1.src);
+	//$(".pie_imagen").remove();
+	$("#imagen").attr("src", foto_1.src);
+	//$(".pie_imagen").after("<p>Fuente: <a href='https://www.freepik.es/vectores/tecnologia'>www.freepik.es</a></p>");
 }
+var foto_2 = new Image();
+foto_2.src = "Imagenes/IMG_20171231_083651171_1.jpg";
 function img2(){
-	$("#imagen").attr("src","Imagenes/IMG_20171231_083651171_1.jpg");
+	//$(".pie_imagen").remove();
+	$("#imagen").attr("src",foto_2.src);
+	//$(".pie_imagen").after("<p>Fuente: propia (km 1.6 via Bootá - la Calera)</p>");
 }
+var foto_3 = new Image();
+foto_3.src = "Imagenes/IMG_20190724_084628249_1.jpg";
 function img3(){
-	$("#imagen").attr("src","Imagenes/IMG_20190724_084628249_1.jpg");
+	//$(".pie_imagen").remove();
+	$("#imagen").attr("src", foto_3.src);
+	//$(".pie_imagen").after("<p>Fuente: <a href='https://hdl.handle.net/10983/24227'>Trabajo de grado</a>");
 }
+var foto_4 = new Image();
+foto_4.src = "Imagenes/IMG-20191128-WA0004.jpg";
 function imgnormal(){
-	$("#imagen").attr("src","Imagenes/IMG-20191128-WA0004.jpg");
+	//$(".pie_imagen").remove();
+	$("#imagen").attr("src", foto_4.src);
+	//$(".pie_imagen").after("<p>Fuente: propia (día presentación de trabajo de grado)</p>");
 }
 

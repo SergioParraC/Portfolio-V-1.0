@@ -1,10 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
-.repositorio, .facebook, .whatsapp, .youtube, .instagram, .github{
-	display: inline
+.repositorio, .facebook, .whatsapp, .youtube, .instagram, .github, .linkedin{
+	display: inline;
+	color: black
 }
-
+.animacion1, .animacion2, .animacion3, .animacion4, .animacion5{
+	opacity: 1;
+}
+h2{
+	page-break-before: always;
+}
 /*Eliminar barra de navegación*/
 #barra{
 	display: none;
@@ -18,17 +24,26 @@
 	margin-top: 0px;
 }
 #foto_perfil{
+	display: none !important;
+}
+#foto_impr{
+	display: block !important;
 	width: 20%;
 	padding: 0 20px 10px 50px;
+	float: left;
 }
 #p-principal{
 	clear: both
 }
 .redes_sociales{
 	margin-left: 30px;
+	width: 700px;
 }
 .redes_sociales a{
 	font-size: 18px;	
+}
+.redes_sociales li{
+	float: none
 }
 .redes_sociales li span{
 	padding-left: 10px
@@ -53,6 +68,9 @@
 	text-align: justify
 }
 /*Arreglando Proyectos*/
+#link_rep{
+	width: 300px;
+}
 #pie-pagina{
 	display: none
 }
