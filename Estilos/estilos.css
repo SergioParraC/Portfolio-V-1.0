@@ -1,0 +1,313 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+img, fieldset { border: 0; }
+ol { margin-left: 1.4em; list-style: decimal; }
+ul { margin-left: 1em; list-style:square; }
+q:before, q:after { content:''; }
+
+/*Diseno de barra de navegacion*/
+#cuerpo{
+	font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#progress{
+	background-color: dodgerblue;
+	width: 0%;
+	height: 5px;
+	position: absolute;
+	top: 0;
+}
+#barra{
+	position: fixed;
+	top: 0;
+	background-color: #FFFFFF;
+}
+#navbarra li{
+	display: inline;
+	float: left;
+	margin: 0px;
+	list-style: none;
+}
+#navbarra{
+	margin: 0px auto;
+	width: 900px;
+	overflow: hidden; 
+	border-right: 1px solid dodgerblue;
+}
+#navbarra a{
+	display: block;
+	padding: 10px 38.42px;
+	border: 1px solid dodgerblue;
+	border-right: none;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+#navbarra a:hover{
+	color: white;
+	background-color: dodgerblue
+}
+#navbarra a:active{
+	background-color: #444;
+	color: white
+}
+
+
+/*Diseno de inicio*/
+#foto_impr{
+	display: none;
+}
+#inicio-contenido{
+	padding-top: 30px;
+}
+#foto_perfil{
+	width: 40%;
+	height: 100%;
+	padding: 50px;
+	float: left;
+}
+#nombre{
+	font-size: 80px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 100px
+}
+#nombre #apellidos{
+	color:navy
+}
+a{
+	color: #444;
+	text-decoration: none;
+}
+a:hover{
+	color: dodgerblue;
+}
+p{
+	padding: 10px 50px;
+	font-size: 20px;
+}
+#subtitulo{
+	text-transform: uppercase;
+	font-size: 25px;
+}
+#subtitulo a{
+	text-transform: lowercase
+}
+.repositorio, .facebook, .whatsapp, .youtube, .instagram, .github, .linkedin{
+	display: none
+}
+.redes_sociales{
+	font-size: 18px;
+	margin: 0 10% 0 49%;
+	width: 448px;
+}
+.redes_sociales li{
+	float: left
+}
+.redes_sociales a{
+	text-decoration: none;
+	padding:5px 20px;
+	width: 100px;
+	font-size: 35px;
+	color: #444;
+}
+.redes_sociales a:hover{
+	color:dodgerblue;
+}
+/*Modificacion de parametros experiencia*/
+
+hr{
+	clear: both;
+	background-color: #FFFFFF
+}
+h2{
+	font-size: 32px;
+	text-transform: uppercase;
+	padding: 10px 50px 0;
+	color:navy
+}
+h3{
+	font-size: 27px;
+	text-transform: uppercase;
+	padding: 10px 50px;
+	color:mediumslateblue
+}
+#exp-ref{
+	padding-left: 30px
+}
+#exp-ref p{
+	padding: 3px 65px;
+	padding-right: 250px
+}
+#exp-ref #fechas, #educacion-contenido #fechas{
+	float: right;
+	padding-left: 0;
+	padding-right: 0;
+	width: 250px;
+	font-size: 16px;
+	color: #333;
+}
+/*Modificacion de paramentros de educacion*/
+
+li{list-style: none}
+#em_ed_p{
+	font-size: 20px;
+	float: left;
+	margin-top: 18px;
+	margin-left: 40px;
+}
+h4{
+	font-size: 20px;
+	padding: 0px 50px;
+	color:mediumslateblue;
+	padding-right: 250px
+}
+h5{
+	font-size: 19px;
+	padding: 7px 50px 0;
+	color:mediumslateblue;
+	padding-right: 250px
+}
+#educacion-contenido #subtitulo{
+	font-size: 20px;
+	text-transform: capitalize
+}
+#educacion-contenido #p-secundario{
+	color: #666;
+	font-size: 17px;
+	padding-top: 0;
+}
+#educacion-contenido #em_ed_s{
+	font-size: 15px;
+	float: left;
+	margin-top: 9px;
+	margin-left: 25px
+}
+/*Modificacion de paramentros de habilidades*/
+
+#habilidades-contenido li{
+	margin-left: 70px;
+	padding: 9px;
+}
+#habilidades-contenido li i{
+	font-size: 30px;
+}
+#habilidades-contenido h3{
+	margin-left: 30px
+}
+
+/*Modificacion de parametros de intereses*/
+
+#intereses-contenido img{
+	width: 40%;
+	float: left;
+	margin-left: 95px;
+	margin-top: 15px;
+}
+#intereses-contenido p{
+    font-size: 18px;
+    margin-left: 42%;
+    padding: 15px 100px;
+}
+/*Modificacion de parametros de proyectos*/
+
+#proyecto-contenido p{
+	padding-bottom: 0;
+	padding-left: 80px;
+}
+/*Modificacion de pie de pagina*/
+#list-p-pagina{
+	padding-left: 70px
+}
+#list-p-pagina li{
+	float: left;
+	font-size: 15px;
+	padding: 0 20px;
+	color: #666666
+}
+#pie-pagina p{
+	font-size: 18px;
+	color: #666666;
+	
+}
+/*Animaciones de aparicion de elementos*/
+
+.animacion1{
+	opacity: 0;
+	transition: all 0.5s;
+}
+.mostrarArriba{
+	animation: mostrarArriba 1.5s;
+}
+@keyframes mostrarArriba{
+	0%{
+		transform: translateY(300px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.animacion2{
+	animation: mostrarAbajo 1s;
+}
+@keyframes mostrarAbajo{
+	0%{
+		transform: translateY(-60px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+.animacion3{
+	
+	animation: mostrarArribaInicio 1.5s;
+}
+@keyframes mostrarArribaInicio{
+	0%{
+		transform: translateX(-500px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.animacion4{
+	animation: animacion4 1.5s;
+}
+@keyframes animacion4{
+	0%{
+		opacity: 0;
+	}
+	70%{
+		opacity: 0.85;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.animacion5{
+	animation: animacion5 1.5s;
+}
+@keyframes animacion5{
+	0%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 0.15;
+	}
+	100%{
+		opacity: 0;
+	}
+}

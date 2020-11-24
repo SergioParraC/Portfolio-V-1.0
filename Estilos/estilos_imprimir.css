@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+.repositorio, .facebook, .whatsapp, .youtube, .instagram, .github, .linkedin{
+	display: inline;
+	color: black
+}
+.animacion1, .animacion2, .animacion3, .animacion4, .animacion5{
+	opacity: 1;
+}
+h2{
+	page-break-before: always;
+}
+/*Eliminar barra de navegación*/
+#barra{
+	display: none;
+}
+#nombre{
+	font-size: 40px !important;
+	padding-top: 0px
+}
+p{
+	font-size: 20px !important;
+}
+#subtitulo{
+	font-size: 20px !important;
+}
+h2{
+	font-size: 32px !important;
+}
+h3{
+	font-size: 27px !important;
+}
+
+/*Arreglo de inicio para que foto aparezca mas pequeña y adecuada*/
+#inicio-contenido{
+	margin-top: 0px;
+}
+#foto_perfil{
+	display: none !important;
+}
+#foto_impr{
+	display: block !important;
+	width: 20%;
+	padding: 0 20px 10px 50px;
+	float: left;
+}
+#p-principal{
+	clear: both
+}
+.redes_sociales{
+	margin-left: 30px;
+	width: 700px;
+}
+.redes_sociales a{
+	font-size: 18px !important;	
+}
+.redes_sociales li{
+	float: none
+}
+.redes_sociales li span{
+	padding-left: 10px !important
+}
+
+/*Arreglo de fechas en experiencia y estudios*/
+#exp-ref #fechas, #educacion-contenido #fechas{
+	width: 130px;
+	font-size: 16px !important;
+}
+#exp-ref p{
+	padding-right: 130px
+}
+#em_ed_p{
+	font-size: 20px !important;
+}
+h4{
+	font-size: 20px !important;
+}
+h5{
+	font-size: 19px !important;
+}
+#educacion-contenido #subtitulo{
+	font-size: 20px !important;
+}
+#educacion-contenido #p-secundario{
+	font-size: 17px !important;
+}
+#educacion-contenido #em_ed_s{
+	font-size: 15px !important;
+}
+/*Arreglo de foto y texto de intereses*/
+#intereses-contenido img{
+	width: 20%;
+	margin-right: 15px;
+	margin-bottom: 10PX
+}
+#intereses-contenido p{
+	margin-left: 0%;
+	margin-left: -10px;
+	text-align: justify
+}
+#habilidades-contenido li i{
+	font-size: 30px !important;
+}
+#intereses-contenido p{
+    font-size: 18px !important;
+}
+#list-p-pagina li{
+	font-size: 15px !important;
+}
+#pie-pagina p{
+	font-size: 18px !important;
+}
+/*Arreglando Proyectos*/
+#link_rep{
+	width: 300px;
+}
+#pie-pagina{
+	display: none
+}
+#eliminar{
+	display: none
+}

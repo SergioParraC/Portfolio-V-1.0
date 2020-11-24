@@ -37,7 +37,12 @@ $(document).ready(function(){
 	//ultima seccion debe ocupar toda la ventana
 	
 	let altoP = document.documentElement.clientHeight;
-	document.getElementById("proyecto-contenido").style.height=altoP -52+"px";
+	if(window.innerHeight<1080){
+		document.getElementById("proyecto-contenido").style.height=altoP -52+"px";
+	}
+	else{
+		document.getElementById("proyecto-contenido").style.height=altoP -52+"px";
+	}
 	
 	//Muestra ubicacion actual de la pagina bajo la barra de navegacion
 	
@@ -63,6 +68,13 @@ $(document).ready(function(){
 
 	let scrollHeight = document.documentElement.scrollHeight; //Alto total
 	let clientHeight = document.documentElement.clientHeight; //lo que ve el usuario
+	$("#foto_perfil").width=window.innerWidth-150;
+	if(window.innerWidth<1089){
+		var scCambio=1900;
+	}
+	else{
+		var scCambio = 500;
+	}
 	function ScrollProgresBar() {
 		for (var i = 0; i < secciones.length; i++) {
 			longSecc[i] = secciones[i].offsetTop-69; //Altura del elemento con respecto a la parte superior de la pag
@@ -95,15 +107,17 @@ $(document).ready(function(){
 		//Animaciones para elmentos de la pagina
 		for (var i=0;i<animado.length; i++){
 			let alturaAnimado=animado[i].offsetTop;
-			if (alturaAnimado -500< scrollTop){
-				animado[i].style.opacity = 1;
-				animado[i].classList.add("mostrarArriba");
-			}
+			if (alturaAnimado - scCambio < scrollTop) {
+        animado[i].style.opacity = 1;
+        animado[i].classList.add("mostrarArriba");
+      }
 			
 		}
 	}
 	window.addEventListener("scroll", ScrollProgresBar)
 
+	var foto_5 = new Image();
+	foto_5.src = "Imagenes/profile_pag.jpg";
 });
 //Funciones para cambiar las imagenes al pasar mouse por un parrafo en los intereses
 var foto_1 = new Image();

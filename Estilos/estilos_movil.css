@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (max-aspect-ratio: 4/3){
+	#barra{
+		display: none;
+	}
+	#foto_perfil{
+		
+		width: 85% !important;
+	}
+	.redes_sociales{
+		margin-left: 0%;
+		margin-right: 0%;
+		width: 800px;
+	}
+	.redes_sociales{
+		margin-left: 20px;
+	}
+	.redes_sociales a{
+		font-size: 40px;
+	}	
+	h1{
+		font-size: 70px;
+		margin-left: 45px;
+	}
+	h2{
+		font-size: 60px;
+	}
+	h3{
+		font-size: 50px;
+	}
+	h4{
+		font-size: 35px !important;
+	}
+	h5{
+		font-size: 35px !important;
+	}
+	p, span{
+		font-size: 30px !important;
+	}
+	#foto_perfil{
+		width: 100%;
+	}
+	#exp-ref #fechas, #educacion-contenido #fechas{
+		font-size: 30px !important;
+		width: 150px;
+	}
+	#em_ed_p{
+		font-size: 30px !important;
+		margin-top: 30px !important;
+	}
+	#em_ed_s{ 
+		font-size: 25px !important;
+		margin-top: 20px !important;
+	}
+	#intereses-contenido p{
+		margin-left: 0;
+		text-align: justify;
+	}
+	#intereses-contenido img{
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	#habilidades-contenido li{
+		font-size: 30px !important;
+	}
+	#proyecto-contenido{
+		height: 1200px !important;
+	}
+	#list-p-pagina li{
+		font-size: 25px !important;
+	}
+}
